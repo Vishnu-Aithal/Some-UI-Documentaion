@@ -53,6 +53,10 @@
   animation-duration: 1s;
 }
 
+.hero .btn {
+  width: 150px;
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -106,5 +110,22 @@
 
   100% {
     transform: translate(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 2rem;
+    margin: 0 0.5rem 2rem;
+  }
+  .hero__heading--hl {
+    font-size: 2.5rem;
+  }
+  .hero__text {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .hero .btn {
+    margin: 0.5rem 2rem;
   }
 }
