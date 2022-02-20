@@ -30,7 +30,10 @@
         </button>
         <ul class="ms-auto nav-bar__list-group clr-white" id="nav-links">
           <li class="nav-bar__list-item mx-1">
-            <a href="#" class="nav-bar__link"
+            <a
+              href="https://github.com/Vishnu-Aithal/Component-Library"
+              class="nav-bar__link"
+              target="_blank"
               ><i class="fab fa-github me-2"></i>Github</a
             >
           </li>
@@ -54,7 +57,7 @@
             >
           </li>
           <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#" class="">Installation</a>
+            <a class="side-bar__link" href="#installation">Installation</a>
           </li>
           <li class="side-bar__heading my-1 clr-primary">
             <a class="side-bar__link heading-xs text-bold" href="#"
@@ -138,10 +141,27 @@
       </aside>
 
       <div class="content">
+        <!-- Installation -->
+        <section class="section" id="installation">
+          <div class="section__container">
+            <h2 class="section__heading">Installation</h2>
+            
+            <p class="section__text">
+              Some_UI is an open source devoloping Component Library.
+              To use this component library you have to link the stylesheet given below from cdn. <br>
+              Javascript Code Snippets are provided in the Documentation wherever neccessary.
+            </p>
+            <pre>
+              <code class="section__code">
+<link rel="stylesheet" href="https://some-ui-components.netlify.app/export.css" />
+              </code>
+            </pre>
+          </div>
+        </section>
         <!-- Button -->
         <section id="buttons" class="section">
           <div class="section__container">
-            <h1 class="section__heading">Buttons</h1>
+            <h2 class="section__heading">Buttons</h1>
             <p class="section__text">
               Add Class <span class="hl">btn</span> for default button styling,
               use modifier <span class="hl">btn--lg</span> for large button, and
@@ -166,7 +186,7 @@
               </code>
             </pre>
 
-            <h3 class="section__sub-heading">Colored Buttons</h3>
+            <h4 class="section__sub-heading">Colored Buttons</h3>
             <p class="section__text">
               Use modifier <span class="hl">btn--primary</span> for primary
               color, and <span class="hl">btn--secondary</span> for secondary
@@ -204,7 +224,7 @@
               </code>
             </pre>
 
-            <h3 class="section__sub-heading">Colored Outline Buttons</h3>
+            <h4 class="section__sub-heading">Colored Outline Buttons</h3>
             <p class="section__text">
               Use modifier <span class="hl">btn--outline-primary</span> or
               <span class="hl">btn--outline-secondary</span> for outline
@@ -248,7 +268,7 @@
               </code>
             </pre>
 
-            <h3 class="section__sub-heading">Icon Buttons</h3>
+            <h4 class="section__sub-heading">Icon Buttons</h3>
             <p class="section__text">
               Use modifier <span class="hl">btn--icon</span>for icon styling and
               <span class="hl">btn--icon-lg</span> for large icon button.
@@ -283,7 +303,7 @@
 </button>
               </code>
             </pre>
-            <h3 class="section__sub-heading">Link Buttons</h3>
+            <h4 class="section__sub-heading">Link Buttons</h3>
             <p class="section__text">
               To style "a" tags as buttons use modifier
               <span class="hl">btn--link</span>, since "a" tags do not have
@@ -318,7 +338,7 @@
 >
               </code>
             </pre>
-            <h3 class="section__sub-heading">Float Button</h3>
+            <h4 class="section__sub-heading">Float Button</h3>
             <p class="section__text">
               Use modifier <span class="hl">btn--float</span> to place button at
               bottom right corner of the screen
@@ -345,7 +365,7 @@
         <!-- Alerts -->
         <section class="section" id="alerts">
           <div class="section__container">
-            <h3 class="section__heading">Alerts</h3>
+            <h2 class="section__heading">Alerts</h3>
             <p class="section__text">
               Add class <span class="hl">alert</span> for default styling, to
               add a dismiss use span tag with class
@@ -428,7 +448,7 @@
         <!-- Avatars -->
         <section class="section" id="avatars">
           <div class="section__container">
-            <h3 class="section__heading">Avatars</h3>
+            <h2 class="section__heading">Avatars</h3>
             <p class="section__text">
               Use class <span class="hl">avatar</span> for default avatar
               styling. Use modifier size modifier classes ranging from
@@ -513,7 +533,7 @@
 </div>
               </code>
             </pre>
-            <h3 class="section__sub-heading">
+            <h4 class="section__sub-heading">
               Avatar with Text and Text on Hover
             </h3>
             <p class="section__text">
@@ -564,7 +584,7 @@
         <!-- Badges -->
         <section class="section" id="badges">
           <div class="section__container">
-            <h3 class="section__heading">Badges</h3>
+            <h2 class="section__heading">Badges</h3>
             <p class="section__text">
               Badges are <span class="hl">&lt;span&gt;</span> components with
               main class <span class="hl">badge</span>. To use badge just nest
@@ -585,7 +605,7 @@
               <span class="hl">data-count</span> attribute.
             </p>
             .
-            <h3 class="section__sub-heading">Avatar with badges</h3>
+            <h4 class="section__sub-heading">Avatar with badges</h3>
             <div class="section__showcase">
               <div class="avatar avatar--md br-r shadow-md-hover">
                 <img
@@ -650,7 +670,7 @@
           </code>
           </pre>
 
-            <h3 class="section__sub-heading">Icon with Badges</h3>
+            <h4 class="section__sub-heading">Icon with Badges</h3>
             <div class="section__showcase">
               <button class="btn btn--icon-lg br-1 shadow-md-hover">
                 <i class="far fa-heart"></i>
@@ -707,7 +727,7 @@
         <!-- Cards -->
         <section class="section" id="cards">
           <div class="section__container">
-            <h3 class="section__heading">Cards</h3>
+            <h2 class="section__heading">Cards</h3>
             <p class="section__text">
               Cards provide an effective way of showing users information.
               <br />
@@ -762,7 +782,7 @@
         </code>
       </pre>
 
-            <h3 class="section__sub-heading">Card with Badge</h3>
+            <h4 class="section__sub-heading">Card with Badge</h3>
             <div class="section__showcase">
               <div class="card shadow-sm m-3">
                 <div class="card__badge bg-yellow p-1">New</div>
@@ -827,7 +847,7 @@
           </code>
         </pre>
 
-            <h3 class="section__sub-heading">Card with Overlay</h3>
+            <h4 class="section__sub-heading">Card with Overlay</h3>
 
             <div class="section__showcase">
               <div class="card shadow-sm m-3">
@@ -900,7 +920,7 @@
 </div>
           </code>
         </pre>
-            <h3 class="section__sub-heading">Card with dismiss</h3>
+            <h4 class="section__sub-heading">Card with dismiss</h3>
 
             <div class="section__showcase">
               <div class="card shadow-sm m-3">
@@ -970,7 +990,7 @@
           </code>
         </pre>
 
-            <h3 class="section__sub-heading">Text Only Card</h3>
+            <h4 class="section__sub-heading">Text Only Card</h3>
             <p class="section__text">
               Use modifier <span class="hl">card--text-only</span>
             </p>
@@ -1036,7 +1056,7 @@
           </code>
         </pre>
 
-            <h3 class="section__sub-heading">Horizontal Card</h3>
+            <h4 class="section__sub-heading">Horizontal Card</h3>
             <p class="section__text">
               Use modifier <span class="hl">card--hz</span>
             </p>
@@ -1107,7 +1127,7 @@
         <!-- Images -->
         <section class="section" id="images">
           <div class="section__container">
-            <h3 class="section__heading">Images</h3>
+            <h2 class="section__heading">Images</h3>
             <p class="section__text">
               Add <span class="hl">img-responsive</span> class to
               <span class="hl">&lt;img&gt;</span> tag to make it responsive and
@@ -1129,7 +1149,7 @@
 />
               </code>
             </pre>
-            <h3 class="section__sub-heading">Round Image</h3>
+            <h4 class="section__sub-heading">Round Image</h3>
             <p class="section__text">
               To make the images round just add border-radius
               <span class="hl">br-r</span> and aspect-ratio
@@ -1158,7 +1178,7 @@
         <!-- Inputs -->
         <section class="section" id="inputs">
           <div class="section__container">
-            <h3 class="section__heading">Inputs</h3>
+            <h2 class="section__heading">Inputs</h3>
             <p class="section__text">
               To use input components, wrap the input and label with a
               <span class="hl">&lt;div&gt;</span> and add class
@@ -1292,14 +1312,14 @@
         <!-- Lists -->
         <section class="section" id="lists">
           <div class="section__container">
-            <h3 class="section__heading">Lists</h3>
+            <h2 class="section__heading">Lists</h3>
             <p class="section__text">
               Add class <span class="hl">list-group</span> in
               <span class="hl">&lt;ul&gt;</span> for default list styling and
               class <span class="hl">list__item</span> to
               <span class="hl">&lt;li&gt;</span> for default list item styling.
             </p>
-            <h3 class="section__sub-heading">Stacked List</h3>
+            <h4 class="section__sub-heading">Stacked List</h3>
             <p class="section__text">
               Use modifier <span class="hl">list-group--stacked</span> for
               stacked lists
@@ -1384,7 +1404,7 @@
               </code>
             </pre>
 
-            <h3 class="section__sub-heading">Spaced Lists</h3>
+            <h4 class="section__sub-heading">Spaced Lists</h3>
             <p class="section__text">
               Use Modifier <span class="hl">list-group--spaced</span> for spaced
               lists.
@@ -1407,7 +1427,7 @@
 </ul>
               </code>
             </pre>
-            <h3 class="section__sub-heading">Spaced Lists with borders</h3>
+            <h4 class="section__sub-heading">Spaced Lists with borders</h3>
             <p class="section__text">
               Use Modifier <span class="hl">list-group--spaced-box</span> for
               spaced lists with bborders.
@@ -1436,7 +1456,7 @@
         <!-- Navigation -->
         <section class="section" id="navigation">
           <div class="section__container">
-            <h3 class="section__heading">Navigation</h3>
+            <h2 class="section__heading">Navigation</h3>
             <p class="section__text">
               There are 2 navigation components. Top Nav and Side Bar. Both are
               responsive and includes Hamburger Menu and Sub menus.
@@ -1448,7 +1468,7 @@
                 alt="Navigation Demo"
               />
             </div>
-            <h3 class="section__sub-heading">Top Navigation</h3>
+            <h4 class="section__sub-heading">Top Navigation</h3>
             <p class="section__text">
               It has a Main class of <span class="hl">nav-bar</span>. <br />
               Its Child Elements are header
@@ -1483,7 +1503,7 @@
 </nav>
               </code>
             </pre>
-            <h3 class="section__sub-heading">Side Bar</h3>
+            <h4 class="section__sub-heading">Side Bar</h3>
             <p class="section__text">
               It has a main class of <span class="hl">side-bar</span>. <br />
               Its child elements are
@@ -1576,7 +1596,7 @@
 </aside>
               </code>
             </pre>
-            <h3 class="section__sub-heading">Required Javascript Code</h3>
+            <h4 class="section__sub-heading">Required Javascript Code</h3>
             <pre>
               <code class="section__code">
 //Navigation Functionality
@@ -1656,7 +1676,7 @@ SUI_verticalCollapseToggles.forEach(
         <!-- Ratings -->
         <section class="section" id="ratings">
           <div class="section__container">
-            <h3 class="section__heading">Ratings</h3>
+            <h2 class="section__heading">Ratings</h3>
             <p class="section__text">
               Rating component consist of a
               <span class="hl">&lt;div&gt;</span> with class
@@ -1664,7 +1684,7 @@ SUI_verticalCollapseToggles.forEach(
               It consists of 5 radio inputs of the same group with class
               <span class="hl">rating__star</span>, with values from 1 - 5
             </p>
-            <h3 class="section__sub-heading">Rating Input</h3>
+            <h4 class="section__sub-heading">Rating Input</h3>
             <p class="section__text">
               Use modifier <span class="hl">rating--input</span> to accept
               rating from user. You can use it in a form to get the star value
@@ -1716,7 +1736,7 @@ SUI_verticalCollapseToggles.forEach(
                 </code>
               </pre>
 
-            <h3 class="section__sub-heading">Rating - Display</h3>
+            <h4 class="section__sub-heading">Rating - Display</h3>
             <p class="rating__text">
               Use modifier <span class="hl">rating--display</span>, to showcase
               rating, pass the rating in
@@ -1823,7 +1843,7 @@ SUI_verticalCollapseToggles.forEach(
 </div>
                 </code>
               </pre>
-            <h3 class="section__sub-heading">Required Javascript Code</h3>
+            <h4 class="section__sub-heading">Required Javascript Code</h3>
             <pre>
                 <code class="section__code">
 //Rating Functionality
@@ -1864,7 +1884,7 @@ SUI_ratingDisplays.forEach((display) => {
         <!-- Toasts -->
         <section class="section" id="toasts">
           <div class="section__container">
-            <h3 class="section__heading">Toasts</h3>
+            <h2 class="section__heading">Toasts</h3>
 
             <p class="section__text">
               Toasts are notification briefly shown to user after a task. <br />
@@ -1944,7 +1964,7 @@ SUI_ratingDisplays.forEach((display) => {
 </div>
               </code>
             </pre>
-            <h3 class="section__sub-heading">Required Javascript Code</h3>
+            <h4 class="section__sub-heading">Required Javascript Code</h3>
             <pre>
               <code class="section__code">
 //Toast - Functionality
@@ -2029,7 +2049,7 @@ SUI_toastDismisses.forEach(
         <!-- Modals -->
         <section class="section" id="modals">
           <div class="section__container">
-            <h3 class="section__heading">Modals</h3>
+            <h2 class="section__heading">Modals</h3>
             <p class="section__text">
               Modals are used to create Dialogue with User <br />
               It has main class <span class="hl">modal</span> which acts as a
@@ -2102,7 +2122,7 @@ SUI_toastDismisses.forEach(
         <!-- Box-Shadows -->
         <section class="section" id="box-shadows">
           <div class="section__container">
-            <h3 class="section__heading">Box Shadows</h3>
+            <h2 class="section__heading">Box Shadows</h3>
             <p class="section__text">
               Box shadow utility classes provide classes with ranging sizes of
               box shadows and box shadows on hover
@@ -2165,7 +2185,7 @@ SUI_toastDismisses.forEach(
         <!-- Colors -->
         <section class="section" id="colors">
           <div class="section__container">
-            <h3 class="section__heading">Colors</h3>
+            <h2 class="section__heading">Colors</h3>
             <p class="section__text">
               Color utility provides classes to set Background color
               <span class="hl">bg</span>, color <span class="hl">clr</span>.
@@ -2252,7 +2272,7 @@ SUI_toastDismisses.forEach(
         <!-- Dimensions -->
         <section class="section" id="dimensions">
           <div class="section__container">
-            <h3 class="section__heading">Dimensions</h3>
+            <h2 class="section__heading">Dimensions</h3>
             <p class="section__text">
               Dimensions utility classes provide classes to set height and
               width. <br />
@@ -2301,7 +2321,7 @@ SUI_toastDismisses.forEach(
         <!-- Display -->
         <section class="section" id="displays">
           <div class="section__container">
-            <h3 class="section__heading">Display</h3>
+            <h2 class="section__heading">Display</h3>
             <p class="section__text">
               Display utility classes provide classes to set display property.
             </p>
@@ -2341,7 +2361,7 @@ SUI_toastDismisses.forEach(
         <!-- Grid -->
         <section class="section" id="grids">
           <div class="section__container">
-            <h3 class="section__heading">Grids</h3>
+            <h2 class="section__heading">Grids</h3>
             <p class="section__text">
               Grid utility classes provide classes for arranging elements with
               basic grid classes.
@@ -2397,7 +2417,7 @@ SUI_toastDismisses.forEach(
         <!-- Spacings -->
         <section class="section" id="spacings">
           <div class="section__container">
-            <h3 class="section__heading">Spacings</h3>
+            <h2 class="section__heading">Spacings</h3>
             <p class="section__text">
               Spacings utility classes provide classes to set margin and padding
               <br />
@@ -2487,7 +2507,7 @@ SUI_toastDismisses.forEach(
         <!-- TypoGrapgy -->
         <section class="section" id="typography">
           <div class="section__container">
-            <h3 class="section__heading">Typography</h3>
+            <h2 class="section__heading">Typography</h3>
             <p class="section__text">
               Typography utility classes provide classes to style Headings and
               Texts
