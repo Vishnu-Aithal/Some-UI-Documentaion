@@ -1,167 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://some-ui-components.netlify.app/export.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-light.min.css"
-    />
-    <link rel="stylesheet" href="/stylesheets/documentation.css" />
-    <title>Some-UI-Docs</title>
-  </head>
 
-  <body>
-    <main>
-      <nav class="nav-bar bg-primary shadow-sm">
-        <div class="nav-bar__header heading-md text-bold clr-white me-2">
-          <a class="nav-bar__link" href="/index.html">Some_UI</a>
-        </div>
-        <button
-          class="nav-bar__toggle btn btn--icon-lg clr-white br-2 ms-auto"
-          data-toggle="#nav-links"
-        >
-          <i class="nav-bar__toggle-icon fas fa-bars"></i>
-        </button>
-        <ul class="ms-auto nav-bar__list-group clr-white" id="nav-links">
-          <li class="nav-bar__list-item mx-1">
-            <a
-              href="https://github.com/Vishnu-Aithal/Component-Library"
-              class="nav-bar__link"
-              target="_blank"
-              ><i class="fab fa-github me-2"></i>Github</a
-            >
-          </li>
-          <li class="nav-bar__list-item mx-1">
-            <a href="#" class="nav-bar__link nav-bar__link--active"
-              >Documentation</a
-            >
-          </li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://some-ui-components.netlify.app/export.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-light.min.css" />
+  <link rel="stylesheet" href="/stylesheets/documentation.css" />
+  <title>Some-UI-Docs</title>
+</head>
 
-      <aside class="side-bar shadow-sm p-2 clr-primary" id="side-bar">
-        <button class="side-bar__toggle btn btn--icon" data-toggle="#side-bar">
-          <i class="fas fa-chevron-up"></i>
-        </button>
+<body>
+  <main>
+    <nav class="nav-bar bg-primary shadow-sm">
+      <div class="nav-bar__header heading-md text-bold clr-white me-2">
+        <a class="nav-bar__link" href="/index.html">Some_UI</a>
+      </div>
+      <button class="nav-bar__toggle btn btn--icon-lg clr-white br-2 ms-auto" data-toggle="#nav-links">
+        <i class="nav-bar__toggle-icon fas fa-bars"></i>
+      </button>
+      <ul class="ms-auto nav-bar__list-group clr-white" id="nav-links">
+        <li class="nav-bar__list-item mx-1">
+          <a href="https://github.com/Vishnu-Aithal/Some-UI-Documentaion/tree/dev" class="nav-bar__link"
+            target="_blank"><i class="fab fa-github me-2"></i>Github</a>
+        </li>
+        <li class="nav-bar__list-item mx-1">
+          <a href="#" class="nav-bar__link nav-bar__link--active">Documentation</a>
+        </li>
+      </ul>
+    </nav>
 
-        <ul class="side-bar__menu side-bar__menu--main clr-black">
-          <li class="side-bar__heading my-1 clr-primary">
-            <a class="side-bar__link heading-xs text-bold" href="#"
-              >Getting Started</a
-            >
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#installation">Installation</a>
-          </li>
-          <li class="side-bar__heading my-1 clr-primary">
-            <a class="side-bar__link heading-xs text-bold" href="#"
-              >Components</a
-            >
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#buttons">Buttons</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#alerts">Alerts</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#avatars">Avatar</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#badges">Badge</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#cards">Cards</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#images">Images</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#inputs">Inputs</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#lists">Lists</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#navigation">Navigation</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#ratings">Ratings</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#toasts">Toasts</a>
-          </li>
-          <li class="side-bar__item my-1">
-            <a class="side-bar__link" href="#modals">Modal</a>
-          </li>
+    <aside class="side-bar shadow-sm p-2 clr-primary" id="side-bar">
+      <button class="side-bar__toggle btn btn--icon" data-toggle="#side-bar">
+        <i class="fas fa-chevron-up"></i>
+      </button>
 
-          <li>
-            <div
-              class="side-bar__item side-bar__item--header vertical-collapse-toggle"
-              data-toggle="#exampleSubList"
-            >
-              Utilities<i class="ms-2 fas fa-chevron-right"></i>
-            </div>
+      <ul class="side-bar__menu side-bar__menu--main clr-black">
+        <li class="side-bar__heading my-1 clr-primary">
+          <a class="side-bar__link heading-xs text-bold" href="#">Getting Started</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#installation">Installation</a>
+        </li>
+        <li class="side-bar__heading my-1 clr-primary">
+          <a class="side-bar__link heading-xs text-bold" href="#">Components</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#buttons">Buttons</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#alerts">Alerts</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#avatars">Avatar</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#badges">Badge</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#cards">Cards</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#images">Images</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#inputs">Inputs</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#lists">Lists</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#navigation">Navigation</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#ratings">Ratings</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#toasts">Toasts</a>
+        </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#modals">Modal</a>
+        </li>
 
-            <ul
-              class="side-bar__menu side-bar__menu--sub"
-              id="exampleSubList"
-              data-collapsed="true"
-            >
-              <li class="side-bar__item my-1">
-                <a class="side-bar__link" href="#box-shadows">Box Shadows</a>
-              </li>
-              <li class="side-bar__item my-1">
-                <a class="side-bar__link" href="#colors">Colors</a>
-              </li>
-              <li class="side-bar__item my-1">
-                <a class="side-bar__link" href="#dimensions">Dimensions</a>
-              </li>
-              <li class="side-bar__item my-1">
-                <a class="side-bar__link" href="#displays">Display</a>
-              </li>
-              <li class="side-bar__item my-1">
-                <a class="side-bar__link" href="#grids">Grid</a>
-              </li>
-              <li class="side-bar__item my-1">
-                <a class="side-bar__link" href="#spacings">Spacings</a>
-              </li>
-              <li class="side-bar__item my-1">
-                <a class="side-bar__link" href="#typography">Typography</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </aside>
+        <li>
+          <div class="side-bar__item side-bar__item--header vertical-collapse-toggle" data-toggle="#exampleSubList">
+            Utilities<i class="ms-2 fas fa-chevron-right"></i>
+          </div>
 
-      <div class="content">
-        <!-- Installation -->
-        <section class="section" id="installation">
-          <div class="section__container">
-            <h2 class="section__heading">Installation</h2>
-            
-            <p class="section__text">
-              Some_UI is an open source devoloping Component Library.
-              To use this component library you have to link the stylesheet given below from cdn. <br>
-              Javascript Code Snippets are provided in the Documentation wherever neccessary.
-            </p>
-            <pre>
+          <ul class="side-bar__menu side-bar__menu--sub" id="exampleSubList" data-collapsed="true">
+            <li class="side-bar__item my-1">
+              <a class="side-bar__link" href="#box-shadows">Box Shadows</a>
+            </li>
+            <li class="side-bar__item my-1">
+              <a class="side-bar__link" href="#colors">Colors</a>
+            </li>
+            <li class="side-bar__item my-1">
+              <a class="side-bar__link" href="#dimensions">Dimensions</a>
+            </li>
+            <li class="side-bar__item my-1">
+              <a class="side-bar__link" href="#displays">Display</a>
+            </li>
+            <li class="side-bar__item my-1">
+              <a class="side-bar__link" href="#grids">Grid</a>
+            </li>
+            <li class="side-bar__item my-1">
+              <a class="side-bar__link" href="#spacings">Spacings</a>
+            </li>
+            <li class="side-bar__item my-1">
+              <a class="side-bar__link" href="#typography">Typography</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="content">
+      <!-- Installation -->
+      <section class="section" id="installation">
+        <div class="section__container">
+          <h2 class="section__heading">Installation</h2>
+
+          <p class="section__text">
+            Some_UI is an open source devoloping Component Library.
+            To use this component library you have to link the stylesheet given below from cdn. <br>
+            Javascript Code Snippets are provided in the Documentation wherever neccessary.
+          </p>
+          <pre>
               <code class="section__code">
 <link rel="stylesheet" href="https://some-ui-components.netlify.app/export.css" />
               </code>
             </pre>
-          </div>
-        </section>
-        <!-- Button -->
-        <section id="buttons" class="section">
-          <div class="section__container">
-            <h2 class="section__heading">Buttons</h1>
+        </div>
+      </section>
+      <!-- Button -->
+      <section id="buttons" class="section">
+        <div class="section__container">
+          <h2 class="section__heading">Buttons</h1>
             <p class="section__text">
               Add Class <span class="hl">btn</span> for default button styling,
               use modifier <span class="hl">btn--lg</span> for large button, and
@@ -187,27 +163,27 @@
             </pre>
 
             <h4 class="section__sub-heading">Colored Buttons</h3>
-            <p class="section__text">
-              Use modifier <span class="hl">btn--primary</span> for primary
-              color, and <span class="hl">btn--secondary</span> for secondary
-              color further you can use <span class="hl">bg</span> utility
-              classes for other colors.
-            </p>
-            <div class="section__showcase">
-              <button class="btn btn--primary shadow-md-hover">
-                primary button
-              </button>
-              <button class="btn btn--primary shadow-md-hover" disabled>
-                Primary disabled
-              </button>
-              <button class="btn btn--secondary shadow-md-hover">
-                secondary button
-              </button>
-              <button class="btn btn--secondary shadow-md-hover" disabled>
-                Secondary disabled
-              </button>
-            </div>
-            <pre>
+              <p class="section__text">
+                Use modifier <span class="hl">btn--primary</span> for primary
+                color, and <span class="hl">btn--secondary</span> for secondary
+                color further you can use <span class="hl">bg</span> utility
+                classes for other colors.
+              </p>
+              <div class="section__showcase">
+                <button class="btn btn--primary shadow-md-hover">
+                  primary button
+                </button>
+                <button class="btn btn--primary shadow-md-hover" disabled>
+                  Primary disabled
+                </button>
+                <button class="btn btn--secondary shadow-md-hover">
+                  secondary button
+                </button>
+                <button class="btn btn--secondary shadow-md-hover" disabled>
+                  Secondary disabled
+                </button>
+              </div>
+              <pre>
               <code class="section__code">
 <button class="btn btn--primary shadow-md-hover">
   primary button
@@ -224,31 +200,28 @@
               </code>
             </pre>
 
-            <h4 class="section__sub-heading">Colored Outline Buttons</h3>
-            <p class="section__text">
-              Use modifier <span class="hl">btn--outline-primary</span> or
-              <span class="hl">btn--outline-secondary</span> for outline
-              buttons.
-            </p>
-            <div class="section__showcase">
-              <button class="btn btn--outline-primary shadow-md-hover">
-                outline primary
-              </button>
-              <button class="btn btn--outline-primary shadow-md-hover" disabled>
-                outline primary disabled
-              </button>
-              <button class="btn btn--outline-secondary shadow-md-hover">
-                outline secondary
-              </button>
-              <button
-                class="btn btn--outline-secondary shadow-md-hover"
-                disabled
-              >
-                outline secondary disabled
-              </button>
-            </div>
+              <h4 class="section__sub-heading">Colored Outline Buttons</h3>
+                <p class="section__text">
+                  Use modifier <span class="hl">btn--outline-primary</span> or
+                  <span class="hl">btn--outline-secondary</span> for outline
+                  buttons.
+                </p>
+                <div class="section__showcase">
+                  <button class="btn btn--outline-primary shadow-md-hover">
+                    outline primary
+                  </button>
+                  <button class="btn btn--outline-primary shadow-md-hover" disabled>
+                    outline primary disabled
+                  </button>
+                  <button class="btn btn--outline-secondary shadow-md-hover">
+                    outline secondary
+                  </button>
+                  <button class="btn btn--outline-secondary shadow-md-hover" disabled>
+                    outline secondary disabled
+                  </button>
+                </div>
 
-            <pre>
+                <pre>
               <code class="section__code">
 <button class="btn btn--outline-primary shadow-md-hover">
   outline primary
@@ -268,26 +241,26 @@
               </code>
             </pre>
 
-            <h4 class="section__sub-heading">Icon Buttons</h3>
-            <p class="section__text">
-              Use modifier <span class="hl">btn--icon</span>for icon styling and
-              <span class="hl">btn--icon-lg</span> for large icon button.
-            </p>
-            <div class="section__showcase">
-              <button class="btn btn--icon shadow-sm-hover br-2">
-                <i class="fas fa-share-alt"></i>
-              </button>
-              <button class="btn btn--icon shadow-sm-hover br-r">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-              <button class="btn btn--icon-lg shadow-sm-hover br-2">
-                <i class="fas fa-share-alt"></i>
-              </button>
-              <button class="btn btn--icon-lg shadow-sm-hover br-r">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </div>
-            <pre>
+                <h4 class="section__sub-heading">Icon Buttons</h3>
+                  <p class="section__text">
+                    Use modifier <span class="hl">btn--icon</span>for icon styling and
+                    <span class="hl">btn--icon-lg</span> for large icon button.
+                  </p>
+                  <div class="section__showcase">
+                    <button class="btn btn--icon shadow-sm-hover br-2">
+                      <i class="fas fa-share-alt"></i>
+                    </button>
+                    <button class="btn btn--icon shadow-sm-hover br-r">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                    <button class="btn btn--icon-lg shadow-sm-hover br-2">
+                      <i class="fas fa-share-alt"></i>
+                    </button>
+                    <button class="btn btn--icon-lg shadow-sm-hover br-r">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </div>
+                  <pre>
               <code class="section__code">
 <button class="btn btn--icon shadow-sm-hover br-2">
   <i class="fas fa-share-alt"></i>
@@ -303,27 +276,19 @@
 </button>
               </code>
             </pre>
-            <h4 class="section__sub-heading">Link Buttons</h3>
-            <p class="section__text">
-              To style "a" tags as buttons use modifier
-              <span class="hl">btn--link</span>, since "a" tags do not have
-              disabled attribute, use class
-              <span class="hl">disabled</span> instead to disable link buttons.
-            </p>
-            <div class="section__showcase">
-              <a href="#" class="btn btn--link btn--primary shadow-md-hover"
-                >Primary Link</a
-              >
-              <a href="#" class="btn btn--link btn--secondary shadow-md-hover"
-                >Secondary Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--link btn--primary shadow-md-hover disabled"
-                >Disabled Link</a
-              >
-            </div>
-            <pre>
+                  <h4 class="section__sub-heading">Link Buttons</h3>
+                    <p class="section__text">
+                      To style "a" tags as buttons use modifier
+                      <span class="hl">btn--link</span>, since "a" tags do not have
+                      disabled attribute, use class
+                      <span class="hl">disabled</span> instead to disable link buttons.
+                    </p>
+                    <div class="section__showcase">
+                      <a href="#" class="btn btn--link btn--primary shadow-md-hover">Primary Link</a>
+                      <a href="#" class="btn btn--link btn--secondary shadow-md-hover">Secondary Link</a>
+                      <a href="#" class="btn btn--link btn--primary shadow-md-hover disabled">Disabled Link</a>
+                    </div>
+                    <pre>
               <code class="section__code">
 <a href="#" class="btn btn--link btn--primary shadow-md-hover"
   >Primary Link</a
@@ -338,19 +303,17 @@
 >
               </code>
             </pre>
-            <h4 class="section__sub-heading">Float Button</h3>
-            <p class="section__text">
-              Use modifier <span class="hl">btn--float</span> to place button at
-              bottom right corner of the screen
-            </p>
-            <div class="section__showcase">
-              <button
-                class="btn btn--float btn--icon-lg btn--primary shadow-md-hover br-r"
-              >
-                <i class="fas fa-plus"></i>
-              </button>
-            </div>
-            <pre>
+                    <h4 class="section__sub-heading">Float Button</h3>
+                      <p class="section__text">
+                        Use modifier <span class="hl">btn--float</span> to place button at
+                        bottom right corner of the screen
+                      </p>
+                      <div class="section__showcase">
+                        <button class="btn btn--float btn--icon-lg btn--primary shadow-md-hover br-r">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <pre>
               <code class="section__code">
 <button
   class="btn btn--float btn--icon-lg btn--primary shadow-md-hover br-r"
@@ -359,13 +322,13 @@
 </button>
               </code>
             </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Alerts -->
-        <section class="section" id="alerts">
-          <div class="section__container">
-            <h2 class="section__heading">Alerts</h3>
+      <!-- Alerts -->
+      <section class="section" id="alerts">
+        <div class="section__container">
+          <h2 class="section__heading">Alerts</h3>
             <p class="section__text">
               Add class <span class="hl">alert</span> for default styling, to
               add a dismiss use span tag with class
@@ -385,45 +348,31 @@
             <div class="section__showcase">
               <div class="alert alert--primary br-1 p-3">
                 Primary Alert
-                <span class="alert__dismiss ms-auto"
-                  ><i class="fas fa-times-circle"></i
-                ></span>
+                <span class="alert__dismiss ms-auto"><i class="fas fa-times-circle"></i></span>
               </div>
               <div class="alert alert--secondary br-1 p-3">
                 Secondary Alert
-                <span class="alert__dismiss ms-auto"
-                  ><i class="fas fa-times-circle"></i
-                ></span>
+                <span class="alert__dismiss ms-auto"><i class="fas fa-times-circle"></i></span>
               </div>
               <div class="alert alert--outline-primary br-1 p-3">
                 Primary Outline Alert
-                <span class="alert__dismiss ms-auto"
-                  ><i class="fas fa-times-circle"></i
-                ></span>
+                <span class="alert__dismiss ms-auto"><i class="fas fa-times-circle"></i></span>
               </div>
               <div class="alert alert--outline-secondary br-1 p-3">
                 Secondary Outline Alert
-                <span class="alert__dismiss ms-auto"
-                  ><i class="fas fa-times-circle"></i
-                ></span>
+                <span class="alert__dismiss ms-auto"><i class="fas fa-times-circle"></i></span>
               </div>
               <div class="alert alert--danger br-1 p-3">
                 Danger Alert
-                <span class="alert__dismiss ms-auto"
-                  ><i class="fas fa-times-circle"></i
-                ></span>
+                <span class="alert__dismiss ms-auto"><i class="fas fa-times-circle"></i></span>
               </div>
               <div class="alert alert--warning br-1 p-3">
                 Warning Alert
-                <span class="alert__dismiss ms-auto"
-                  ><i class="fas fa-times-circle"></i
-                ></span>
+                <span class="alert__dismiss ms-auto"><i class="fas fa-times-circle"></i></span>
               </div>
               <div class="alert alert--primary br-1 p-3">
                 Primary Alert with <a class="alert__link" href="#">link</a>
-                <span class="alert__dismiss ms-auto"
-                  ><i class="fas fa-times-circle"></i
-                ></span>
+                <span class="alert__dismiss ms-auto"><i class="fas fa-times-circle"></i></span>
               </div>
             </div>
             <pre>
@@ -442,13 +391,13 @@
 </div>
               </code>
             </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Avatars -->
-        <section class="section" id="avatars">
-          <div class="section__container">
-            <h2 class="section__heading">Avatars</h3>
+      <!-- Avatars -->
+      <section class="section" id="avatars">
+        <div class="section__container">
+          <h2 class="section__heading">Avatars</h3>
             <p class="section__text">
               Use class <span class="hl">avatar</span> for default avatar
               styling. Use modifier size modifier classes ranging from
@@ -459,39 +408,19 @@
             </p>
             <div class="section__showcase">
               <div class="avatar avatar--xs br-r shadow-md-hover">
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt="avatar"
-                />
+                <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="avatar" />
               </div>
               <div class="avatar avatar--sm br-2 shadow-md-hover">
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt="avatar"
-                />
+                <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="avatar" />
               </div>
               <div class="avatar avatar--md br-3 shadow-md-hover">
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt="avatar"
-                />
+                <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="avatar" />
               </div>
               <div class="avatar avatar--lg br-4 shadow-md-hover">
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt="avatar"
-                />
+                <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="avatar" />
               </div>
               <div class="avatar avatar--xl br-r shadow-md-hover">
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt="avatar"
-                />
+                <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="avatar" />
               </div>
             </div>
             <pre>
@@ -535,31 +464,23 @@
             </pre>
             <h4 class="section__sub-heading">
               Avatar with Text and Text on Hover
-            </h3>
-            <p class="section__text">
-              Use modifier <span class="hl">avatar--text-only</span> for avatar
-              with no images, for text on hover use modifier
-              <span class="hl">avatar--text-on-hover</span>, both should have
-              text in "p" tag with class <span class="hl">avatar__text</span>.
-            </p>
-            <div class="section__showcase">
-              <div
-                class="avatar avatar--text-only avatar--md br-r shadow-md-hover"
-              >
-                <p class="avatar__text text-lg text-bold text-center">AB</p>
+              </h3>
+              <p class="section__text">
+                Use modifier <span class="hl">avatar--text-only</span> for avatar
+                with no images, for text on hover use modifier
+                <span class="hl">avatar--text-on-hover</span>, both should have
+                text in "p" tag with class <span class="hl">avatar__text</span>.
+              </p>
+              <div class="section__showcase">
+                <div class="avatar avatar--text-only avatar--md br-r shadow-md-hover">
+                  <p class="avatar__text text-lg text-bold text-center">AB</p>
+                </div>
+                <div class="avatar avatar--text-on-hover avatar--md br-r shadow-md-hover">
+                  <p class="avatar__text text-bold text-center">View</p>
+                  <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="avatar" />
+                </div>
               </div>
-              <div
-                class="avatar avatar--text-on-hover avatar--md br-r shadow-md-hover"
-              >
-                <p class="avatar__text text-bold text-center">View</p>
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt="avatar"
-                />
-              </div>
-            </div>
-            <pre>
+              <pre>
             <code class="section__code">
 <div
   class="avatar avatar--text-only avatar--md br-r shadow-md-hover"
@@ -578,13 +499,13 @@
 </div>
             </code>
             </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Badges -->
-        <section class="section" id="badges">
-          <div class="section__container">
-            <h2 class="section__heading">Badges</h3>
+      <!-- Badges -->
+      <section class="section" id="badges">
+        <div class="section__container">
+          <h2 class="section__heading">Badges</h3>
             <p class="section__text">
               Badges are <span class="hl">&lt;span&gt;</span> components with
               main class <span class="hl">badge</span>. To use badge just nest
@@ -597,58 +518,32 @@
               <span class="hl">badge--top-left</span><br />
               there are two types of badges,
               <span class="hl">badge--status</span> which can be used with
-              <span class="hl">bg</span> utility class to show status.<br /><span
-                class="hl"
-                >badge--count</span
-              >
+              <span class="hl">bg</span> utility class to show status.<br /><span class="hl">badge--count</span>
               can be used to show text inside badge, sourced from
               <span class="hl">data-count</span> attribute.
             </p>
             .
             <h4 class="section__sub-heading">Avatar with badges</h3>
-            <div class="section__showcase">
-              <div class="avatar avatar--md br-r shadow-md-hover">
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt=""
-                />
-                <span
-                  class="badge badge--bottom-right badge--status bg-green"
-                ></span>
+              <div class="section__showcase">
+                <div class="avatar avatar--md br-r shadow-md-hover">
+                  <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="" />
+                  <span class="badge badge--bottom-right badge--status bg-green"></span>
+                </div>
+                <div class="avatar avatar--md br-3 shadow-md-hover">
+                  <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="" />
+                  <span class="badge badge--bottom-left badge--status bg-red"></span>
+                </div>
+                <div class="avatar avatar--md br-4 shadow-md-hover">
+                  <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="" />
+                  <span class="badge badge--status bg-yellow"></span>
+                </div>
+                <div class="avatar avatar--md br-r shadow-md-hover">
+                  <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="" />
+                  <span class="badge badge--count badge--top-left br-4 bg-primary clr-white" data-count="9999">
+                  </span>
+                </div>
               </div>
-              <div class="avatar avatar--md br-3 shadow-md-hover">
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt=""
-                />
-                <span
-                  class="badge badge--bottom-left badge--status bg-red"
-                ></span>
-              </div>
-              <div class="avatar avatar--md br-4 shadow-md-hover">
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt=""
-                />
-                <span class="badge badge--status bg-yellow"></span>
-              </div>
-              <div class="avatar avatar--md br-r shadow-md-hover">
-                <img
-                  class="avatar__img"
-                  src="/assets/images/avatar_demo.png"
-                  alt=""
-                />
-                <span
-                  class="badge badge--count badge--top-left br-4 bg-primary clr-white"
-                  data-count="9999"
-                >
-                </span>
-              </div>
-            </div>
-            <pre>
+              <pre>
           <code class="section__code">
 <div class=" avatar avatar--md br-r shadow-md-hover">
   <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="">
@@ -670,42 +565,30 @@
           </code>
           </pre>
 
-            <h4 class="section__sub-heading">Icon with Badges</h3>
-            <div class="section__showcase">
-              <button class="btn btn--icon-lg br-1 shadow-md-hover">
-                <i class="far fa-heart"></i>
-                <span
-                  class="badge badge--bottom-right badge--count br-1 bg-red clr-white"
-                  data-count="99"
-                >
-                </span>
-              </button>
-              <button class="btn btn--icon-lg br-2 shadow-md-hover">
-                <i class="fas fa-share-alt"></i>
-                <span
-                  class="badge badge--bottom-left badge--count br-2 bg-red clr-white"
-                  data-count="99"
-                >
-                </span>
-              </button>
-              <button class="btn btn--icon-lg br-3 shadow-md-hover">
-                <i class="fas fa-envelope"></i>
-                <span
-                  class="badge badge--count br-r bg-red clr-white"
-                  data-count="99"
-                >
-                </span>
-              </button>
-              <button class="btn btn--icon-lg br-r shadow-md-hover">
-                <i class="fas fa-folder-open"></i>
-                <span
-                  class="badge badge--top-left badge--count br-4 bg-red clr-white"
-                  data-count="99"
-                >
-                </span>
-              </button>
-            </div>
-            <pre>
+              <h4 class="section__sub-heading">Icon with Badges</h3>
+                <div class="section__showcase">
+                  <button class="btn btn--icon-lg br-1 shadow-md-hover">
+                    <i class="far fa-heart"></i>
+                    <span class="badge badge--bottom-right badge--count br-1 bg-red clr-white" data-count="99">
+                    </span>
+                  </button>
+                  <button class="btn btn--icon-lg br-2 shadow-md-hover">
+                    <i class="fas fa-share-alt"></i>
+                    <span class="badge badge--bottom-left badge--count br-2 bg-red clr-white" data-count="99">
+                    </span>
+                  </button>
+                  <button class="btn btn--icon-lg br-3 shadow-md-hover">
+                    <i class="fas fa-envelope"></i>
+                    <span class="badge badge--count br-r bg-red clr-white" data-count="99">
+                    </span>
+                  </button>
+                  <button class="btn btn--icon-lg br-r shadow-md-hover">
+                    <i class="fas fa-folder-open"></i>
+                    <span class="badge badge--top-left badge--count br-4 bg-red clr-white" data-count="99">
+                    </span>
+                  </button>
+                </div>
+                <pre>
             <code class="section__code">
 <button class=" btn btn--icon-lg br-1 shadow-md-hover"><i class="far fa-heart"></i>
   <span class="badge badge--bottom-right badge--count br-1 bg-red clr-white" data-count="99">
@@ -721,13 +604,13 @@
   </span></button>
             </code>
           </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Cards -->
-        <section class="section" id="cards">
-          <div class="section__container">
-            <h2 class="section__heading">Cards</h3>
+      <!-- Cards -->
+      <section class="section" id="cards">
+        <div class="section__container">
+          <h2 class="section__heading">Cards</h3>
             <p class="section__text">
               Cards provide an effective way of showing users information.
               <br />
@@ -783,40 +666,36 @@
       </pre>
 
             <h4 class="section__sub-heading">Card with Badge</h3>
-            <div class="section__showcase">
-              <div class="card shadow-sm m-3">
-                <div class="card__badge bg-yellow p-1">New</div>
-                <div class="card__body p-2">
-                  <div class="card__img-wrapper">
-                    <img
-                      class="card__img"
-                      src="/assets/images/card_demo_image.jpg"
-                      alt="Card Header Image"
-                      srcset=""
-                    />
+              <div class="section__showcase">
+                <div class="card shadow-sm m-3">
+                  <div class="card__badge bg-yellow p-1">New</div>
+                  <div class="card__body p-2">
+                    <div class="card__img-wrapper">
+                      <img class="card__img" src="/assets/images/card_demo_image.jpg" alt="Card Header Image"
+                        srcset="" />
+                    </div>
+                    <div class="card__text-wrapper">
+                      <h3 class="card__heading heading-xs">Product Title</h3>
+                      <p class="text-semi-bold text-gray">by Brand</p>
+                      <p class="mt-3">Small description about product</p>
+                    </div>
                   </div>
-                  <div class="card__text-wrapper">
-                    <h3 class="card__heading heading-xs">Product Title</h3>
-                    <p class="text-semi-bold text-gray">by Brand</p>
-                    <p class="mt-3">Small description about product</p>
+                  <div class="card__cta-wrapper p-2">
+                    <button class="btn btn--primary">Buy Now</button>
+                    <button class="btn btn--secondary ms-1">Add To Cart</button>
+                    <button class="btn btn--icon br-2 ms-auto">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn btn--icon br-2">
+                      <i class="fas fa-share-alt"></i>
+                    </button>
+                    <button class="btn btn--icon br-2">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
                   </div>
-                </div>
-                <div class="card__cta-wrapper p-2">
-                  <button class="btn btn--primary">Buy Now</button>
-                  <button class="btn btn--secondary ms-1">Add To Cart</button>
-                  <button class="btn btn--icon br-2 ms-auto">
-                    <i class="far fa-heart"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-share-alt"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </button>
                 </div>
               </div>
-            </div>
-            <pre>
+              <pre>
           <code class="section__code">
 <div class="card shadow-sm m-3">
   <div class="card__badge bg-yellow p-1">New</div>
@@ -847,47 +726,43 @@
           </code>
         </pre>
 
-            <h4 class="section__sub-heading">Card with Overlay</h3>
+              <h4 class="section__sub-heading">Card with Overlay</h3>
 
-            <div class="section__showcase">
-              <div class="card shadow-sm m-3">
-                <div class="card__overlay-wrapper">
-                  <p class="card__overlay-text heading-md text-bold">
-                    Out Of Stock
-                  </p>
-                  <a class="btn btn--link" href="#">View Product</a>
-                </div>
-                <div class="card__body p-2">
-                  <div class="card__img-wrapper">
-                    <img
-                      class="card__img"
-                      src="/assets/images/card_demo_image.jpg"
-                      alt="Card Header Image"
-                      srcset=""
-                    />
+                <div class="section__showcase">
+                  <div class="card shadow-sm m-3">
+                    <div class="card__overlay-wrapper">
+                      <p class="card__overlay-text heading-md text-bold">
+                        Out Of Stock
+                      </p>
+                      <a class="btn btn--link" href="#">View Product</a>
+                    </div>
+                    <div class="card__body p-2">
+                      <div class="card__img-wrapper">
+                        <img class="card__img" src="/assets/images/card_demo_image.jpg" alt="Card Header Image"
+                          srcset="" />
+                      </div>
+                      <div class="card__text-wrapper">
+                        <h3 class="card__heading heading-xs">Product Title</h3>
+                        <p class="text-semi-bold text-gray">by Brand</p>
+                        <p class="mt-3">Small description about product</p>
+                      </div>
+                    </div>
+                    <div class="card__cta-wrapper p-2">
+                      <button class="btn btn--primary">Buy Now</button>
+                      <button class="btn btn--secondary ms-1">Add To Cart</button>
+                      <button class="btn btn--icon br-2 ms-auto">
+                        <i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn btn--icon br-2">
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                      <button class="btn btn--icon br-2">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </button>
+                    </div>
                   </div>
-                  <div class="card__text-wrapper">
-                    <h3 class="card__heading heading-xs">Product Title</h3>
-                    <p class="text-semi-bold text-gray">by Brand</p>
-                    <p class="mt-3">Small description about product</p>
-                  </div>
                 </div>
-                <div class="card__cta-wrapper p-2">
-                  <button class="btn btn--primary">Buy Now</button>
-                  <button class="btn btn--secondary ms-1">Add To Cart</button>
-                  <button class="btn btn--icon br-2 ms-auto">
-                    <i class="far fa-heart"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-share-alt"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <pre>
+                <pre>
             <code class="section__code">
 <div class="card shadow-sm m-3">
   <div class="card__overlay-wrapper">
@@ -920,44 +795,40 @@
 </div>
           </code>
         </pre>
-            <h4 class="section__sub-heading">Card with dismiss</h3>
+                <h4 class="section__sub-heading">Card with dismiss</h3>
 
-            <div class="section__showcase">
-              <div class="card shadow-sm m-3">
-                <div class="card__dismiss">
-                  <i class="fas fa-times clr-white"></i>
-                </div>
-                <div class="card__body p-2">
-                  <div class="card__img-wrapper">
-                    <img
-                      class="card__img"
-                      src="/assets/images/card_demo_image.jpg"
-                      alt="Card Header Image"
-                      srcset=""
-                    />
+                  <div class="section__showcase">
+                    <div class="card shadow-sm m-3">
+                      <div class="card__dismiss">
+                        <i class="fas fa-times clr-white"></i>
+                      </div>
+                      <div class="card__body p-2">
+                        <div class="card__img-wrapper">
+                          <img class="card__img" src="/assets/images/card_demo_image.jpg" alt="Card Header Image"
+                            srcset="" />
+                        </div>
+                        <div class="card__text-wrapper">
+                          <h3 class="card__heading heading-xs">Product Title</h3>
+                          <p class="text-semi-bold text-gray">by Brand</p>
+                          <p class="mt-3">Small description about product</p>
+                        </div>
+                      </div>
+                      <div class="card__cta-wrapper p-2">
+                        <button class="btn btn--primary">Buy Now</button>
+                        <button class="btn btn--secondary ms-1">Add To Cart</button>
+                        <button class="btn btn--icon br-2 ms-auto">
+                          <i class="far fa-heart"></i>
+                        </button>
+                        <button class="btn btn--icon br-2">
+                          <i class="fas fa-share-alt"></i>
+                        </button>
+                        <button class="btn btn--icon br-2">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card__text-wrapper">
-                    <h3 class="card__heading heading-xs">Product Title</h3>
-                    <p class="text-semi-bold text-gray">by Brand</p>
-                    <p class="mt-3">Small description about product</p>
-                  </div>
-                </div>
-                <div class="card__cta-wrapper p-2">
-                  <button class="btn btn--primary">Buy Now</button>
-                  <button class="btn btn--secondary ms-1">Add To Cart</button>
-                  <button class="btn btn--icon br-2 ms-auto">
-                    <i class="far fa-heart"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-share-alt"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <pre>
+                  <pre>
               <code class="section__code">
 <div class="card shadow-sm m-3">
   <div class="card__dismiss">
@@ -990,43 +861,39 @@
           </code>
         </pre>
 
-            <h4 class="section__sub-heading">Text Only Card</h3>
-            <p class="section__text">
-              Use modifier <span class="hl">card--text-only</span>
-            </p>
-            <div class="section__showcase">
-              <div class="card card--text-only shadow-sm m-3">
-                <div class="card__body p-2">
-                  <div class="card__img-wrapper">
-                    <img
-                      class="card__img"
-                      src="/assets/images/card_demo_image.jpg"
-                      alt="Card Header Image"
-                      srcset=""
-                    />
-                  </div>
-                  <div class="card__text-wrapper">
-                    <h3 class="card__heading heading-xs">Product Title</h3>
-                    <p class="text-semi-bold text-gray">by Brand</p>
-                    <p class="mt-3">Small description about product</p>
-                  </div>
-                </div>
-                <div class="card__cta-wrapper p-2">
-                  <button class="btn btn--primary">Buy Now</button>
-                  <button class="btn btn--secondary ms-1">Add To Cart</button>
-                  <button class="btn btn--icon br-2 ms-auto">
-                    <i class="far fa-heart"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-share-alt"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <pre>
+                  <h4 class="section__sub-heading">Text Only Card</h3>
+                    <p class="section__text">
+                      Use modifier <span class="hl">card--text-only</span>
+                    </p>
+                    <div class="section__showcase">
+                      <div class="card card--text-only shadow-sm m-3">
+                        <div class="card__body p-2">
+                          <div class="card__img-wrapper">
+                            <img class="card__img" src="/assets/images/card_demo_image.jpg" alt="Card Header Image"
+                              srcset="" />
+                          </div>
+                          <div class="card__text-wrapper">
+                            <h3 class="card__heading heading-xs">Product Title</h3>
+                            <p class="text-semi-bold text-gray">by Brand</p>
+                            <p class="mt-3">Small description about product</p>
+                          </div>
+                        </div>
+                        <div class="card__cta-wrapper p-2">
+                          <button class="btn btn--primary">Buy Now</button>
+                          <button class="btn btn--secondary ms-1">Add To Cart</button>
+                          <button class="btn btn--icon br-2 ms-auto">
+                            <i class="far fa-heart"></i>
+                          </button>
+                          <button class="btn btn--icon br-2">
+                            <i class="fas fa-share-alt"></i>
+                          </button>
+                          <button class="btn btn--icon br-2">
+                            <i class="fas fa-ellipsis-v"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <pre>
               <code class="section__code">
 <div class="card card--text-only shadow-sm m-3">
   <div class="card__body p-2">
@@ -1056,43 +923,39 @@
           </code>
         </pre>
 
-            <h4 class="section__sub-heading">Horizontal Card</h3>
-            <p class="section__text">
-              Use modifier <span class="hl">card--hz</span>
-            </p>
-            <div class="section__showcase">
-              <div class="card card--hz shadow-sm m-3">
-                <div class="card__body p-2">
-                  <div class="card__img-wrapper">
-                    <img
-                      class="card__img"
-                      src="/assets/images/card_demo_image.jpg"
-                      alt="Card Header Image"
-                      srcset=""
-                    />
-                  </div>
-                  <div class="card__text-wrapper ps-2">
-                    <h3 class="card__heading heading-xs">Product Title</h3>
-                    <p class="text-semi-bold text-gray">by Brand</p>
-                    <p class="mt-3">Small description about product</p>
-                  </div>
-                </div>
-                <div class="card__cta-wrapper p-2">
-                  <button class="btn btn--primary">Buy Now</button>
-                  <button class="btn btn--secondary ms-1">Add To Cart</button>
-                  <button class="btn btn--icon br-2 ms-auto">
-                    <i class="far fa-heart"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-share-alt"></i>
-                  </button>
-                  <button class="btn btn--icon br-2">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <pre>
+                    <h4 class="section__sub-heading">Horizontal Card</h3>
+                      <p class="section__text">
+                        Use modifier <span class="hl">card--hz</span>
+                      </p>
+                      <div class="section__showcase">
+                        <div class="card card--hz shadow-sm m-3">
+                          <div class="card__body p-2">
+                            <div class="card__img-wrapper">
+                              <img class="card__img" src="/assets/images/card_demo_image.jpg" alt="Card Header Image"
+                                srcset="" />
+                            </div>
+                            <div class="card__text-wrapper ps-2">
+                              <h3 class="card__heading heading-xs">Product Title</h3>
+                              <p class="text-semi-bold text-gray">by Brand</p>
+                              <p class="mt-3">Small description about product</p>
+                            </div>
+                          </div>
+                          <div class="card__cta-wrapper p-2">
+                            <button class="btn btn--primary">Buy Now</button>
+                            <button class="btn btn--secondary ms-1">Add To Cart</button>
+                            <button class="btn btn--icon br-2 ms-auto">
+                              <i class="far fa-heart"></i>
+                            </button>
+                            <button class="btn btn--icon br-2">
+                              <i class="fas fa-share-alt"></i>
+                            </button>
+                            <button class="btn btn--icon br-2">
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <pre>
               <code class="section__code">
 <div class="card card--hz shadow-sm m-3">
   <div class="card__body p-2">
@@ -1121,24 +984,20 @@
 </div>
           </code>
         </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Images -->
-        <section class="section" id="images">
-          <div class="section__container">
-            <h2 class="section__heading">Images</h3>
+      <!-- Images -->
+      <section class="section" id="images">
+        <div class="section__container">
+          <h2 class="section__heading">Images</h3>
             <p class="section__text">
               Add <span class="hl">img-responsive</span> class to
               <span class="hl">&lt;img&gt;</span> tag to make it responsive and
               grow to containers width.
             </p>
             <div class="section__showcase">
-              <img
-                class="img-responsive"
-                src="/assets\images\image-demo.jpg"
-                alt="Roads"
-              />
+              <img class="img-responsive" src="/assets\images\image-demo.jpg" alt="Roads" />
             </div>
             <pre>
               <code class="section__code">
@@ -1150,20 +1009,16 @@
               </code>
             </pre>
             <h4 class="section__sub-heading">Round Image</h3>
-            <p class="section__text">
-              To make the images round just add border-radius
-              <span class="hl">br-r</span> and aspect-ratio
-              <span class="hl">ar-1-1</span> utilty classes with
-              <span class="hl">img-responsive</span> class.
-            </p>
-            <div class="section__showcase">
-              <img
-                class="img-responsive ar-1-1 br-r"
-                src="/assets\images\image-demo.jpg"
-                alt="Roads"
-              />
-            </div>
-            <pre>
+              <p class="section__text">
+                To make the images round just add border-radius
+                <span class="hl">br-r</span> and aspect-ratio
+                <span class="hl">ar-1-1</span> utilty classes with
+                <span class="hl">img-responsive</span> class.
+              </p>
+              <div class="section__showcase">
+                <img class="img-responsive ar-1-1 br-r" src="/assets\images\image-demo.jpg" alt="Roads" />
+              </div>
+              <pre>
               <code class="section__code">
 <img
   class="img-responsive ar-1-1 br-r"
@@ -1172,13 +1027,13 @@
 />
               </code>
             </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Inputs -->
-        <section class="section" id="inputs">
-          <div class="section__container">
-            <h2 class="section__heading">Inputs</h3>
+      <!-- Inputs -->
+      <section class="section" id="inputs">
+        <div class="section__container">
+          <h2 class="section__heading">Inputs</h3>
             <p class="section__text">
               To use input components, wrap the input and label with a
               <span class="hl">&lt;div&gt;</span> and add class
@@ -1198,46 +1053,22 @@
               <span class="hl">input__required-check</span> respectively
             </p>
             <div class="section__showcase">
-              <form
-                action=""
-                class="p-4 w-fit text-center shadow-md-hover mx-auto"
-              >
+              <form action="" class="p-4 w-fit text-center shadow-md-hover mx-auto">
                 <div class="input">
-                  <input
-                    type="text"
-                    class="input__field"
-                    name="name"
-                    placeholder="Enter Name"
-                    required
-                  />
+                  <input type="text" class="input__field" name="name" placeholder="Enter Name" required />
                   <label class="input__float-label" for="name">Name</label>
                   <span class="input__required-text"></span>
                 </div>
                 <div class="input">
-                  <input
-                    class="input__field input__field--invalid"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter Email"
-                    required
-                  />
+                  <input class="input__field input__field--invalid" type="email" name="email" id="email"
+                    placeholder="Enter Email" required />
                   <label class="input__float-label" for="email">Email</label>
                   <span class="input__required-text"></span>
                 </div>
                 <div class="input">
-                  <input
-                    class="input__field input__field--valid"
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="Enter New Password"
-                    minlength="8"
-                    required
-                  />
-                  <label class="input__float-label" for="password"
-                    >Password</label
-                  >
+                  <input class="input__field input__field--valid" type="password" name="password" id="password"
+                    placeholder="Enter New Password" minlength="8" required />
+                  <label class="input__float-label" for="password">Password</label>
                   <span class="input__required-text"></span>
                 </div>
                 <div class="input">
@@ -1249,17 +1080,9 @@
                 </button>
               </form>
               <div class="input mt-2 mx-auto">
-                <textarea
-                  class="input__field"
-                  name="feedback"
-                  id="feedback"
-                  cols="30"
-                  rows="10"
-                  placeholder="Feedback"
-                ></textarea>
-                <label class="input__float-label" for="feedback"
-                  >Feedback</label
-                >
+                <textarea class="input__field" name="feedback" id="feedback" cols="30" rows="10"
+                  placeholder="Feedback"></textarea>
+                <label class="input__float-label" for="feedback">Feedback</label>
               </div>
             </div>
             <pre>
@@ -1306,13 +1129,13 @@
   </div>
               </code>
             </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Lists -->
-        <section class="section" id="lists">
-          <div class="section__container">
-            <h2 class="section__heading">Lists</h3>
+      <!-- Lists -->
+      <section class="section" id="lists">
+        <div class="section__container">
+          <h2 class="section__heading">Lists</h3>
             <p class="section__text">
               Add class <span class="hl">list-group</span> in
               <span class="hl">&lt;ul&gt;</span> for default list styling and
@@ -1320,54 +1143,42 @@
               <span class="hl">&lt;li&gt;</span> for default list item styling.
             </p>
             <h4 class="section__sub-heading">Stacked List</h3>
-            <p class="section__text">
-              Use modifier <span class="hl">list-group--stacked</span> for
-              stacked lists
-            </p>
-            <div class="section__showcase">
-              <ul class="list-group list-group--stacked w-75p">
-                <li class="list__item">
-                  <div class="avatar avatar--sm br-r">
-                    <img
-                      class="avatar__img"
-                      src="/assets/images/avatar_demo.png"
-                      alt=""
-                    />
-                  </div>
-                  <p class="ms-2">Tagged you in a post</p>
-                  <button class="btn btn--icon br-2 ms-auto">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </li>
-                <li class="list__item">
-                  <div class="avatar avatar--sm br-r">
-                    <img
-                      class="avatar__img"
-                      src="/assets/images/avatar_demo.png"
-                      alt=""
-                    />
-                  </div>
-                  <p class="ms-2">Liked your post</p>
-                  <button class="btn br-1 ms-auto">View Post</button>
-                </li>
-                <li class="list__item">
-                  <div class="avatar avatar--sm br-r">
-                    <img
-                      class="avatar__img"
-                      src="/assets/images/avatar_demo.png"
-                      alt=""
-                    />
-                  </div>
-                  <p class="ms-2">Sent you a friend request</p>
-                  <button class="btn btn--primary br-1 ms-auto">Accept</button>
-                  <button class="btn btn--outline-secondary br-1 ms-1">
-                    Reject
-                  </button>
-                </li>
-              </ul>
-            </div>
+              <p class="section__text">
+                Use modifier <span class="hl">list-group--stacked</span> for
+                stacked lists
+              </p>
+              <div class="section__showcase">
+                <ul class="list-group list-group--stacked w-75p">
+                  <li class="list__item">
+                    <div class="avatar avatar--sm br-r">
+                      <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="" />
+                    </div>
+                    <p class="ms-2">Tagged you in a post</p>
+                    <button class="btn btn--icon br-2 ms-auto">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </li>
+                  <li class="list__item">
+                    <div class="avatar avatar--sm br-r">
+                      <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="" />
+                    </div>
+                    <p class="ms-2">Liked your post</p>
+                    <button class="btn br-1 ms-auto">View Post</button>
+                  </li>
+                  <li class="list__item">
+                    <div class="avatar avatar--sm br-r">
+                      <img class="avatar__img" src="/assets/images/avatar_demo.png" alt="" />
+                    </div>
+                    <p class="ms-2">Sent you a friend request</p>
+                    <button class="btn btn--primary br-1 ms-auto">Accept</button>
+                    <button class="btn btn--outline-secondary br-1 ms-1">
+                      Reject
+                    </button>
+                  </li>
+                </ul>
+              </div>
 
-            <pre>
+              <pre>
               <code class="section__code">
 <ul class="list-group list-group--stacked w-75p">
 
@@ -1404,20 +1215,20 @@
               </code>
             </pre>
 
-            <h4 class="section__sub-heading">Spaced Lists</h3>
-            <p class="section__text">
-              Use Modifier <span class="hl">list-group--spaced</span> for spaced
-              lists.
-            </p>
-            <div class="section__showcase">
-              <ul class="list-group list-group--spaced w-75p">
-                <li class="list__item">Content 1</li>
-                <li class="list__item">Content 2</li>
-                <li class="list__item">Content 3</li>
-                <li class="list__item">Content 4</li>
-              </ul>
-            </div>
-            <pre>
+              <h4 class="section__sub-heading">Spaced Lists</h3>
+                <p class="section__text">
+                  Use Modifier <span class="hl">list-group--spaced</span> for spaced
+                  lists.
+                </p>
+                <div class="section__showcase">
+                  <ul class="list-group list-group--spaced w-75p">
+                    <li class="list__item">Content 1</li>
+                    <li class="list__item">Content 2</li>
+                    <li class="list__item">Content 3</li>
+                    <li class="list__item">Content 4</li>
+                  </ul>
+                </div>
+                <pre>
               <code class="section__code">
 <ul class="list-group list-group--spaced w-75p">
   <li class="list__item">Content 1</li>
@@ -1427,20 +1238,20 @@
 </ul>
               </code>
             </pre>
-            <h4 class="section__sub-heading">Spaced Lists with borders</h3>
-            <p class="section__text">
-              Use Modifier <span class="hl">list-group--spaced-box</span> for
-              spaced lists with bborders.
-            </p>
-            <div class="section__showcase">
-              <ul class="list-group list-group--spaced-box w-75p">
-                <li class="list__item">Content 1</li>
-                <li class="list__item">Content 2</li>
-                <li class="list__item">Content 3</li>
-                <li class="list__item">Content 4</li>
-              </ul>
-            </div>
-            <pre>
+                <h4 class="section__sub-heading">Spaced Lists with borders</h3>
+                  <p class="section__text">
+                    Use Modifier <span class="hl">list-group--spaced-box</span> for
+                    spaced lists with bborders.
+                  </p>
+                  <div class="section__showcase">
+                    <ul class="list-group list-group--spaced-box w-75p">
+                      <li class="list__item">Content 1</li>
+                      <li class="list__item">Content 2</li>
+                      <li class="list__item">Content 3</li>
+                      <li class="list__item">Content 4</li>
+                    </ul>
+                  </div>
+                  <pre>
               <code class="section__code">
 <ul class="list-group list-group--spaced-box w-75p">
   <li class="list__item">Content 1</li>
@@ -1450,40 +1261,36 @@
 </ul>
               </code>
             </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Navigation -->
-        <section class="section" id="navigation">
-          <div class="section__container">
-            <h2 class="section__heading">Navigation</h3>
+      <!-- Navigation -->
+      <section class="section" id="navigation">
+        <div class="section__container">
+          <h2 class="section__heading">Navigation</h3>
             <p class="section__text">
               There are 2 navigation components. Top Nav and Side Bar. Both are
               responsive and includes Hamburger Menu and Sub menus.
             </p>
             <div class="section__showcase">
-              <img
-                class="img-responsive"
-                src="/assets/images/nav_demo.gif"
-                alt="Navigation Demo"
-              />
+              <img class="img-responsive" src="/assets/images/nav_demo.gif" alt="Navigation Demo" />
             </div>
             <h4 class="section__sub-heading">Top Navigation</h3>
-            <p class="section__text">
-              It has a Main class of <span class="hl">nav-bar</span>. <br />
-              Its Child Elements are header
-              <span class="hl">nav-bar__header</span>, links
-              <span class="hl">nav-bar__link</span> and modifier
-              <span class="hl">nav-bar__link--active</span> Hamburger toggle
-              button <span class="hl">nav-bar__toggle</span> with
-              <span class="hl">data-toggle</span> attribute specifying the id of
-              target nav bar, List of links in
-              <span class="hl">nav-bar__list-group</span> with child elements
-              containing <span class="hl">nav-bar__list-item</span> <br />
-              Arrangment and dimensions of elements are styled by utilty
-              classes.
-            </p>
-            <pre>
+              <p class="section__text">
+                It has a Main class of <span class="hl">nav-bar</span>. <br />
+                Its Child Elements are header
+                <span class="hl">nav-bar__header</span>, links
+                <span class="hl">nav-bar__link</span> and modifier
+                <span class="hl">nav-bar__link--active</span> Hamburger toggle
+                button <span class="hl">nav-bar__toggle</span> with
+                <span class="hl">data-toggle</span> attribute specifying the id of
+                target nav bar, List of links in
+                <span class="hl">nav-bar__list-group</span> with child elements
+                containing <span class="hl">nav-bar__list-item</span> <br />
+                Arrangment and dimensions of elements are styled by utilty
+                classes.
+              </p>
+              <pre>
               <code class="section__code">
 <nav class="nav-bar bg-primary shadow-sm">
   <div class="nav-bar__header heading-md text-bold clr-white me-2">
@@ -1503,38 +1310,38 @@
 </nav>
               </code>
             </pre>
-            <h4 class="section__sub-heading">Side Bar</h3>
-            <p class="section__text">
-              It has a main class of <span class="hl">side-bar</span>. <br />
-              Its child elements are
-              <span class="hl">side-bar__toggle</span> with attribute
-              <span class="hl">data-toggle</span> containing id of target
-              side-bar. <br />
-              It has menus with main class
-              <span class="hl">side-bar__menu</span>, with modifiers
-              <span class="hl">side-bar__menu--main</span> and
-              <span class="hl">side-bar__menu--sub</span>. <br />
-              Its items have a class of <span class="hl">side-bar__item</span> ,
-              and <span class="hl">side-bar__heading</span> for menu Headings.
-              <span class="hl">side-bar__link</span> class will be used for
-              links in menu. <br />
-              Any Sub Menu will be part of main list enclosed inside a
-              <span class="hl">&lt;li&gt;</span> tag. Sub menus will have
-              <span class="hl">&lt;div&gt;</span> with 3 classes
-              <span class="hl">side-bar__item--header</span>,
-              <span class="hl">side-bar__item</span> and
-              <span class="hl">vertical-collapse-toggle</span>, It will have
-              <span class="hl">data-toggle</span> attribute which contains
-              target sub-menu's id. <br />
-              sub-menu <span class="hl">&lt;ul&gt;</span> with class
-              <span class="hl">side-bar__menu</span> with modifier
-              <span class="hl">side-bar__menu--sub</span> will contain the items
-              <span class="hl">side-bar__item</span> of sub-menu. <br />
-              Arrangment and dimensions of elements are styled by utilty
-              classes.
-            </p>
-            .
-            <pre>
+              <h4 class="section__sub-heading">Side Bar</h3>
+                <p class="section__text">
+                  It has a main class of <span class="hl">side-bar</span>. <br />
+                  Its child elements are
+                  <span class="hl">side-bar__toggle</span> with attribute
+                  <span class="hl">data-toggle</span> containing id of target
+                  side-bar. <br />
+                  It has menus with main class
+                  <span class="hl">side-bar__menu</span>, with modifiers
+                  <span class="hl">side-bar__menu--main</span> and
+                  <span class="hl">side-bar__menu--sub</span>. <br />
+                  Its items have a class of <span class="hl">side-bar__item</span> ,
+                  and <span class="hl">side-bar__heading</span> for menu Headings.
+                  <span class="hl">side-bar__link</span> class will be used for
+                  links in menu. <br />
+                  Any Sub Menu will be part of main list enclosed inside a
+                  <span class="hl">&lt;li&gt;</span> tag. Sub menus will have
+                  <span class="hl">&lt;div&gt;</span> with 3 classes
+                  <span class="hl">side-bar__item--header</span>,
+                  <span class="hl">side-bar__item</span> and
+                  <span class="hl">vertical-collapse-toggle</span>, It will have
+                  <span class="hl">data-toggle</span> attribute which contains
+                  target sub-menu's id. <br />
+                  sub-menu <span class="hl">&lt;ul&gt;</span> with class
+                  <span class="hl">side-bar__menu</span> with modifier
+                  <span class="hl">side-bar__menu--sub</span> will contain the items
+                  <span class="hl">side-bar__item</span> of sub-menu. <br />
+                  Arrangment and dimensions of elements are styled by utilty
+                  classes.
+                </p>
+                .
+                <pre>
               <code class="section__code">
 <aside class="side-bar shadow-sm p-2 clr-primary" id="side-bar">
   <button class="side-bar__toggle btn btn--icon" data-toggle="#side-bar">
@@ -1596,8 +1403,8 @@
 </aside>
               </code>
             </pre>
-            <h4 class="section__sub-heading">Required Javascript Code</h3>
-            <pre>
+                <h4 class="section__sub-heading">Required Javascript Code</h3>
+                  <pre>
               <code class="section__code">
 //Navigation Functionality
 
@@ -1670,13 +1477,13 @@ SUI_verticalCollapseToggles.forEach(
 );
               </code>
             </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Ratings -->
-        <section class="section" id="ratings">
-          <div class="section__container">
-            <h2 class="section__heading">Ratings</h3>
+      <!-- Ratings -->
+      <section class="section" id="ratings">
+        <div class="section__container">
+          <h2 class="section__heading">Ratings</h3>
             <p class="section__text">
               Rating component consist of a
               <span class="hl">&lt;div&gt;</span> with class
@@ -1685,46 +1492,21 @@ SUI_verticalCollapseToggles.forEach(
               <span class="hl">rating__star</span>, with values from 1 - 5
             </p>
             <h4 class="section__sub-heading">Rating Input</h3>
-            <p class="section__text">
-              Use modifier <span class="hl">rating--input</span> to accept
-              rating from user. You can use it in a form to get the star value
-              of user selected rating through radio buttons.
-            </p>
-            <div class="section__showcase">
-              <div class="rating rating--input bg-off-white br-2 p-1">
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  value="1"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  value="2"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  value="3"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  value="4"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  value="5"
-                />
+              <p class="section__text">
+                Use modifier <span class="hl">rating--input</span> to accept
+                rating from user. You can use it in a form to get the star value
+                of user selected rating through radio buttons.
+              </p>
+              <div class="section__showcase">
+                <div class="rating rating--input bg-off-white br-2 p-1">
+                  <input type="radio" class="rating__star" name="rating" value="1" />
+                  <input type="radio" class="rating__star" name="rating" value="2" />
+                  <input type="radio" class="rating__star" name="rating" value="3" />
+                  <input type="radio" class="rating__star" name="rating" value="4" />
+                  <input type="radio" class="rating__star" name="rating" value="5" />
+                </div>
               </div>
-            </div>
-            <pre>
+              <pre>
                 <code class="section__code">
 <div class="rating rating--input bg-off-white br-2 p-1">
   <input type="radio" class="rating__star" name="rating" value="1" />
@@ -1736,96 +1518,30 @@ SUI_verticalCollapseToggles.forEach(
                 </code>
               </pre>
 
-            <h4 class="section__sub-heading">Rating - Display</h3>
-            <p class="rating__text">
-              Use modifier <span class="hl">rating--display</span>, to showcase
-              rating, pass the rating in
-              <span class="hl">data-rating</span> attribute, to display the
-              appropriate rating
-            </p>
-            <div class="section__showcase">
-              <div
-                class="rating rating--display bg-off-white br-2 p-1"
-                data-rating="3"
-              >
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-1"
-                  value="1"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-2"
-                  value="2"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-3"
-                  value="3"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-4"
-                  value="4"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-5"
-                  value="5"
-                />
-              </div>
-              <div
-                class="rating rating--display bg-off-white br-2 p-1"
-                data-rating="4"
-              >
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-1"
-                  value="1"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-2"
-                  value="2"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-3"
-                  value="3"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-4"
-                  value="4"
-                />
-                <input
-                  type="radio"
-                  class="rating__star"
-                  name="rating"
-                  id="star-5"
-                  value="5"
-                />
-              </div>
-            </div>
-            <pre>
+              <h4 class="section__sub-heading">Rating - Display</h3>
+                <p class="rating__text">
+                  Use modifier <span class="hl">rating--display</span>, to showcase
+                  rating, pass the rating in
+                  <span class="hl">data-rating</span> attribute, to display the
+                  appropriate rating
+                </p>
+                <div class="section__showcase">
+                  <div class="rating rating--display bg-off-white br-2 p-1" data-rating="3">
+                    <input type="radio" class="rating__star" name="rating" id="star-1" value="1" />
+                    <input type="radio" class="rating__star" name="rating" id="star-2" value="2" />
+                    <input type="radio" class="rating__star" name="rating" id="star-3" value="3" />
+                    <input type="radio" class="rating__star" name="rating" id="star-4" value="4" />
+                    <input type="radio" class="rating__star" name="rating" id="star-5" value="5" />
+                  </div>
+                  <div class="rating rating--display bg-off-white br-2 p-1" data-rating="4">
+                    <input type="radio" class="rating__star" name="rating" id="star-1" value="1" />
+                    <input type="radio" class="rating__star" name="rating" id="star-2" value="2" />
+                    <input type="radio" class="rating__star" name="rating" id="star-3" value="3" />
+                    <input type="radio" class="rating__star" name="rating" id="star-4" value="4" />
+                    <input type="radio" class="rating__star" name="rating" id="star-5" value="5" />
+                  </div>
+                </div>
+                <pre>
                 <code class="section__code">
 <div class="rating rating--display bg-off-white br-2 p-1" data-rating="3">
   <input type="radio" class="rating__star" name="rating" id="star-1" value="1" />
@@ -1843,8 +1559,8 @@ SUI_verticalCollapseToggles.forEach(
 </div>
                 </code>
               </pre>
-            <h4 class="section__sub-heading">Required Javascript Code</h3>
-            <pre>
+                <h4 class="section__sub-heading">Required Javascript Code</h3>
+                  <pre>
                 <code class="section__code">
 //Rating Functionality
 const SUI_ratingInputStars = document.querySelectorAll(
@@ -1878,13 +1594,13 @@ SUI_ratingDisplays.forEach((display) => {
 });
                 </code>
               </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Toasts -->
-        <section class="section" id="toasts">
-          <div class="section__container">
-            <h2 class="section__heading">Toasts</h3>
+      <!-- Toasts -->
+      <section class="section" id="toasts">
+        <div class="section__container">
+          <h2 class="section__heading">Toasts</h3>
 
             <p class="section__text">
               Toasts are notification briefly shown to user after a task. <br />
@@ -1908,25 +1624,16 @@ SUI_ratingDisplays.forEach((display) => {
                   <p class="toast__time text-gray text-sm ms-auto">
                     2 seconds ago
                   </p>
-                  <div
-                    class="toast__dismiss ms-2"
-                    data-target="#example-toast1"
-                  >
+                  <div class="toast__dismiss ms-2" data-target="#example-toast1">
                     <i class="fas fa-times-circle"></i>
                   </div>
                 </div>
                 <div class="toast__body text-md p-2">Toast description</div>
               </div>
-              <button
-                class="btn btn--primary show-toast"
-                data-target="#example-toast1"
-              >
+              <button class="btn btn--primary show-toast" data-target="#example-toast1">
                 Show Toast 1
               </button>
-              <button
-                class="btn btn--primary show-toast"
-                data-target="#example-toast2"
-              >
+              <button class="btn btn--primary show-toast" data-target="#example-toast2">
                 Show Toast 2
               </button>
             </div>
@@ -1965,7 +1672,7 @@ SUI_ratingDisplays.forEach((display) => {
               </code>
             </pre>
             <h4 class="section__sub-heading">Required Javascript Code</h3>
-            <pre>
+              <pre>
               <code class="section__code">
 //Toast - Functionality
 
@@ -2011,45 +1718,39 @@ SUI_toastDismisses.forEach(
 );
               </code>
             </pre>
-            <div class="toast__container">
-              <div class="toast br-2" id="example-toast1">
-                <div class="toast__header p-2">
-                  <h4 class="toast__title">Toast Title 1</h4>
-                  <p class="toast__time text-gray text-sm ms-auto">
-                    2 seconds ago
-                  </p>
-                  <div
-                    class="toast__dismiss ms-2"
-                    data-target="#example-toast1"
-                  >
-                    <i class="fas fa-times-circle"></i>
+              <div class="toast__container">
+                <div class="toast br-2" id="example-toast1">
+                  <div class="toast__header p-2">
+                    <h4 class="toast__title">Toast Title 1</h4>
+                    <p class="toast__time text-gray text-sm ms-auto">
+                      2 seconds ago
+                    </p>
+                    <div class="toast__dismiss ms-2" data-target="#example-toast1">
+                      <i class="fas fa-times-circle"></i>
+                    </div>
                   </div>
+                  <div class="toast__body text-md p-2">Toast description</div>
                 </div>
-                <div class="toast__body text-md p-2">Toast description</div>
-              </div>
-              <div class="toast br-1" id="example-toast2">
-                <div class="toast__header p-2">
-                  <h4 class="toast__title">Toast Title 2</h4>
-                  <p class="toast__time text-gray text-sm ms-auto">
-                    2 seconds ago
-                  </p>
-                  <div
-                    class="toast__dismiss ms-2"
-                    data-target="#example-toast2"
-                  >
-                    <i class="fas fa-times-circle"></i>
+                <div class="toast br-1" id="example-toast2">
+                  <div class="toast__header p-2">
+                    <h4 class="toast__title">Toast Title 2</h4>
+                    <p class="toast__time text-gray text-sm ms-auto">
+                      2 seconds ago
+                    </p>
+                    <div class="toast__dismiss ms-2" data-target="#example-toast2">
+                      <i class="fas fa-times-circle"></i>
+                    </div>
                   </div>
+                  <div class="toast__body text-md p-2">Toast description</div>
                 </div>
-                <div class="toast__body text-md p-2">Toast description</div>
               </div>
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Modals -->
-        <section class="section" id="modals">
-          <div class="section__container">
-            <h2 class="section__heading">Modals</h3>
+      <!-- Modals -->
+      <section class="section" id="modals">
+        <div class="section__container">
+          <h2 class="section__heading">Modals</h3>
             <p class="section__text">
               Modals are used to create Dialogue with User <br />
               It has main class <span class="hl">modal</span> which acts as a
@@ -2067,29 +1768,20 @@ SUI_toastDismisses.forEach(
               <div class="modal__body bg-white br-2">
                 <div class="modal__header p-3">
                   <h2 class="modal__title">Modal Title</h2>
-                  <button
-                    class="modal__dismiss btn btn--icon dismiss"
-                    data-target="#example-modal"
-                  >
+                  <button class="modal__dismiss btn btn--icon dismiss" data-target="#example-modal">
                     <i class="fas fa-times"></i><i class="fas fa-dismiss"></i>
                   </button>
                 </div>
 
                 <p class="modal__text p-3">Modal body text</p>
                 <div class="modal__cta-wrapper p-3 mt-auto text-end">
-                  <button
-                    class="btn br-1 me-2 dismiss"
-                    data-target="#example-modal"
-                  >
+                  <button class="btn br-1 me-2 dismiss" data-target="#example-modal">
                     Dismiss
                   </button>
                   <button class="btn btn--primary br-1">SAVE</button>
                 </div>
               </div>
-              <button
-                class="btn btn--primary show-modal"
-                data-target="#example-modal"
-              >
+              <button class="btn btn--primary show-modal" data-target="#example-modal">
                 Show Modal
               </button>
             </div>
@@ -2116,13 +1808,13 @@ SUI_toastDismisses.forEach(
 </div>
               </code>
             </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Box-Shadows -->
-        <section class="section" id="box-shadows">
-          <div class="section__container">
-            <h2 class="section__heading">Box Shadows</h3>
+      <!-- Box-Shadows -->
+      <section class="section" id="box-shadows">
+        <div class="section__container">
+          <h2 class="section__heading">Box Shadows</h3>
             <p class="section__text">
               Box shadow utility classes provide classes with ranging sizes of
               box shadows and box shadows on hover
@@ -2179,13 +1871,13 @@ SUI_toastDismisses.forEach(
               <div class="shadow-sm-hover p-3">shadow-sm-hover</div>
               <div class="shadow-md-hover p-3">shadow-md-hover</div>
             </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Colors -->
-        <section class="section" id="colors">
-          <div class="section__container">
-            <h2 class="section__heading">Colors</h3>
+      <!-- Colors -->
+      <section class="section" id="colors">
+        <div class="section__container">
+          <h2 class="section__heading">Colors</h3>
             <p class="section__text">
               Color utility provides classes to set Background color
               <span class="hl">bg</span>, color <span class="hl">clr</span>.
@@ -2266,13 +1958,13 @@ SUI_toastDismisses.forEach(
                 </tr>
               </tbody>
             </table>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Dimensions -->
-        <section class="section" id="dimensions">
-          <div class="section__container">
-            <h2 class="section__heading">Dimensions</h3>
+      <!-- Dimensions -->
+      <section class="section" id="dimensions">
+        <div class="section__container">
+          <h2 class="section__heading">Dimensions</h3>
             <p class="section__text">
               Dimensions utility classes provide classes to set height and
               width. <br />
@@ -2315,13 +2007,13 @@ SUI_toastDismisses.forEach(
               <span class="hl">vw</span> for viewport-width
               <span class="hl">vh</span> for viewport-height
             </p>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Display -->
-        <section class="section" id="displays">
-          <div class="section__container">
-            <h2 class="section__heading">Display</h3>
+      <!-- Display -->
+      <section class="section" id="displays">
+        <div class="section__container">
+          <h2 class="section__heading">Display</h3>
             <p class="section__text">
               Display utility classes provide classes to set display property.
             </p>
@@ -2355,13 +2047,13 @@ SUI_toastDismisses.forEach(
                 </tr>
               </tbody>
             </table>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Grid -->
-        <section class="section" id="grids">
-          <div class="section__container">
-            <h2 class="section__heading">Grids</h3>
+      <!-- Grid -->
+      <section class="section" id="grids">
+        <div class="section__container">
+          <h2 class="section__heading">Grids</h3>
             <p class="section__text">
               Grid utility classes provide classes for arranging elements with
               basic grid classes.
@@ -2411,13 +2103,13 @@ SUI_toastDismisses.forEach(
                 <div class="bg-primary-light text-center py-3">Item 3</div>
               </div>
             </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Spacings -->
-        <section class="section" id="spacings">
-          <div class="section__container">
-            <h2 class="section__heading">Spacings</h3>
+      <!-- Spacings -->
+      <section class="section" id="spacings">
+        <div class="section__container">
+          <h2 class="section__heading">Spacings</h3>
             <p class="section__text">
               Spacings utility classes provide classes to set margin and padding
               <br />
@@ -2501,13 +2193,13 @@ SUI_toastDismisses.forEach(
                 </tr>
               </tbody>
             </table>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- TypoGrapgy -->
-        <section class="section" id="typography">
-          <div class="section__container">
-            <h2 class="section__heading">Typography</h3>
+      <!-- TypoGrapgy -->
+      <section class="section" id="typography">
+        <div class="section__container">
+          <h2 class="section__heading">Typography</h3>
             <p class="section__text">
               Typography utility classes provide classes to style Headings and
               Texts
@@ -2659,32 +2351,30 @@ SUI_toastDismisses.forEach(
                 </tr>
               </tbody>
             </table>
-          </div>
-        </section>
-      </div>
-      <div class="modal" id="example-modal">
-        <div class="modal__body bg-white br-2">
-          <div class="modal__header p-3">
-            <h2 class="modal__title">Modal Title</h2>
-            <button
-              class="modal__dismiss btn btn--icon dismiss"
-              data-target="#example-modal"
-            >
-              <i class="fas fa-times"></i><i class="fas fa-dismiss"></i>
-            </button>
-          </div>
+        </div>
+      </section>
+    </div>
+    <div class="modal" id="example-modal">
+      <div class="modal__body bg-white br-2">
+        <div class="modal__header p-3">
+          <h2 class="modal__title">Modal Title</h2>
+          <button class="modal__dismiss btn btn--icon dismiss" data-target="#example-modal">
+            <i class="fas fa-times"></i><i class="fas fa-dismiss"></i>
+          </button>
+        </div>
 
-          <p class="modal__text p-3">Modal body text</p>
-          <div class="modal__cta-wrapper p-3 mt-auto text-end">
-            <button class="btn br-1 me-2 dismiss" data-target="#example-modal">
-              Dismiss
-            </button>
-            <button class="btn btn--primary br-1">SAVE</button>
-          </div>
+        <p class="modal__text p-3">Modal body text</p>
+        <div class="modal__cta-wrapper p-3 mt-auto text-end">
+          <button class="btn br-1 me-2 dismiss" data-target="#example-modal">
+            Dismiss
+          </button>
+          <button class="btn btn--primary br-1">SAVE</button>
         </div>
       </div>
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script src="/index.js"></script>
-  </body>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script src="/index.js"></script>
+</body>
+
 </html>
