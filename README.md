@@ -4,6 +4,8 @@ This is a Documentation Site of the SOME_UI Component Library - https://github.c
 
 ---
 
+![Site Video](/assets/images/Some_UI Doc.gif)
+
 > ### Quick Installation:
 
 Some_UI is an open source devoloping Component Library. To use this component library you have to link the stylesheet given below from cdn.
@@ -13,6 +15,10 @@ Javascript Code Snippets are provided in the Documentation wherever neccessary.
 <link rel="stylesheet" href="https://some-ui-components.netlify.app/export.css">
 ```
 
+---
+> ## Live Link:
+
+https://some-ui.netlify.app/
 ---
 
 > ### Tech Stack Used:
@@ -58,6 +64,3 @@ Javascript Code Snippets are provided in the Documentation wherever neccessary.
 
 ---
 
-> ## Live Link:
-
-- https://some-ui.netlify.app/
