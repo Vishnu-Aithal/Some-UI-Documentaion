@@ -4,7 +4,7 @@ This is a Documentation Site of the SOME_UI Component Library - https://github.c
 
 ---
 
-![Site Video](/assets/images/Some_UI Doc.gif)
+![Site Video](https://github.com/Vishnu-Aithal/Some-UI-Documentaion/blob/update-readme/assets/images/Some_UI%20Doc.gif)
 
 > ### Quick Installation:
 
