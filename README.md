@@ -11,7 +11,7 @@ This is a Documentation Site of the SOME_UI Component Library - https://github.c
 Some_UI is an open source devoloping Component Library. To use this component library you have to link the stylesheet given below from cdn.
 Javascript Code Snippets are provided in the Documentation wherever neccessary.
 
-```
+```html
 <link rel="stylesheet" href="https://some-ui-components.netlify.app/export.css">
 ```
 
