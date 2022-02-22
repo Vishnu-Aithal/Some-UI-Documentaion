@@ -83,6 +83,9 @@
         <li class="side-bar__item my-1">
           <a class="side-bar__link" href="#modals">Modal</a>
         </li>
+        <li class="side-bar__item my-1">
+          <a class="side-bar__link" href="#sliders">Slider</a>
+        </li>
 
         <li>
           <div class="side-bar__item side-bar__item--header vertical-collapse-toggle" data-toggle="#exampleSubList">
@@ -1811,6 +1814,58 @@ SUI_toastDismisses.forEach(
         </div>
       </section>
 
+      <!-- Slider -->
+      <section class="section" id="sliders">
+        <div class="section__container">
+          <h2 class="section__heading">Slider</h2>
+          <p class="section__text">
+            Range slider is used when we require input within a set range. Since it is a type of input use the
+            <span class="hl">&lt;div&gt;</span> with <span class="hl">input</span> wrapper. <br>
+            Use class <span class="hl">slider</span> for <span class="hl">&lt;input&gt;</span> element. <br>
+            For Gradings create a <span class="hl">&lt;datalist&gt;</span> element with an id and link it to <span
+              class="hl">list attribute</span> of the slider input. <br>
+            For Labels add labels to the data list wherever required and add class <span class="hl">slider__label</span>
+            to the data list element.
+          </p>
+          <div class="section__showcase">
+            <div class="input"><input class="slider" type="range" min="100" max="1000" step="100" list="steps" name=""
+                id="" />
+              <datalist class="slider__label" id="steps">
+                <option value="100" label="100"></option>
+                <option value="200" label=></option>
+                <option value="300" label=></option>
+                <option value="400" label=></option>
+                <option value="500" label="500"></option>
+                <option value="600" label=></option>
+                <option value="700" label=></option>
+                <option value="800" label=></option>
+                <option value="900" label=></option>
+                <option value="1000" label="1000"></option>
+              </datalist>
+            </div>
+          </div>
+          <pre>
+            <code class="section__code">
+<div class="input"><input class="slider" type="range" min="100" max="1000" step="100" list="steps" name=""
+    id="" />
+  <datalist class="slider__label" id="steps">
+    <option value="100" label="100"></option>
+    <option value="200" label=></option>
+    <option value="300" label=></option>
+    <option value="400" label=></option>
+    <option value="500" label="500"></option>
+    <option value="600" label=></option>
+    <option value="700" label=></option>
+    <option value="800" label=></option>
+    <option value="900" label=></option>
+    <option value="1000" label="1000"></option>
+  </datalist>
+</div>
+            </code>
+          </pre>
+        </div>
+      </section>
+
       <!-- Box-Shadows -->
       <section class="section" id="box-shadows">
         <div class="section__container">
@@ -2353,7 +2408,11 @@ SUI_toastDismisses.forEach(
             </table>
         </div>
       </section>
+
+
+
     </div>
+
     <div class="modal" id="example-modal">
       <div class="modal__body bg-white br-2">
         <div class="modal__header p-3">
@@ -2372,6 +2431,7 @@ SUI_toastDismisses.forEach(
         </div>
       </div>
     </div>
+
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   <script src="/index.js"></script>

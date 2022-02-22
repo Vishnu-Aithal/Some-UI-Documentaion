@@ -60,6 +60,7 @@ https://some-ui.netlify.app/
 - Navigation
 - Ratings
 - Toasts
+- Slider
 - Utility Classes
 
 ---
